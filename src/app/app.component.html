@@ -18,7 +18,8 @@
 
     <div class="col-4" *ngIf="encontrado">
 
-      <img [src]="'https://ferremayoristas.com.mx/assets/img_products/' + producto.CLAVE + '.jpg'" class="img-fluid rounded">
+      <img [src]="'https://ferremayoristas.com.mx/assets/photos/' + producto.XIMAGEN2" class="img-fluid rounded">
+      <!-- <img [src]="'http://192.168.1.250/assets/photos/' + producto.XIMAGEN2" class="img-fluid rounded"> -->
 
     </div>
 
@@ -36,7 +37,7 @@
 
       <h3>
         
-        ULTIMA COMPRA: <span class="badge badge-primary">{{producto.ULTMOV | date:'dd-MM-yyyy'}}</span>
+        ULTIMA COMPRA: <span class="badge badge-primary">{{producto.ULTIMA | date:'dd-MM-yyyy'}}</span>
       
       </h3>
 
